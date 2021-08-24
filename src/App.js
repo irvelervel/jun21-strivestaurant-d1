@@ -2,6 +2,7 @@ import './App.css'
 import 'bootstrap/dist/css/bootstrap.min.css'
 
 import MyNavbar from './components/MyNavbar'
+import Home from './components/Home'
 
 // the first react component that gets its way into the DOM
 function App() {
@@ -11,7 +12,7 @@ function App() {
       <MyNavbar title="Strivestaurant" color="dark" />
       {/* <MyNavbar title="Magda" color="dark" /> */}
       {/* <MyNavbar /> */}
-      <div>Hello!</div>
+      <Home />
     </div>
   )
 }

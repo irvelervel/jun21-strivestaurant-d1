@@ -8,15 +8,15 @@ import { Navbar, Nav } from 'react-bootstrap'
 
 // import {} is for components that are not exported as DEFAULT
 
-const MyNavbar = (props) => {
+const MyNavbar = ({ title, color }) => {
     // props is an object
     // {
     //   title: 'Strivestaurant'
     //   color: 'dark
     // }
     return (
-        <Navbar onClick={(e) => console.log('clicked!', e)} collapseOnSelect expand="lg" bg={props.color} variant={props.color}>
-            <Navbar.Brand href="#home">{props.title} - Strive for food</Navbar.Brand>
+        <Navbar onClick={(e) => console.log('clicked!', e)} collapseOnSelect expand="lg" bg={color} variant={color}>
+            <Navbar.Brand href="#home">{title} - Strive for food</Navbar.Brand>
             <Navbar.Toggle aria-controls="responsive-navbar-nav" />
             <Navbar.Collapse id="responsive-navbar-nav">
                 <Nav className="ml-auto">
