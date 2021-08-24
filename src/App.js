@@ -1,15 +1,24 @@
 import './App.css'
 import 'bootstrap/dist/css/bootstrap.min.css'
 
+import MyNavbar from './components/MyNavbar'
+
 // the first react component that gets its way into the DOM
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <div>I ERASED EVERYTHING!</div>
-      </header>
+    <div>
+      {/* a prop is a dynamic piece of information that is passed with the component's usage */}
+      <MyNavbar title="Strivestaurant" color="dark" />
+      {/* <MyNavbar title="Magda" color="dark" /> */}
+      {/* <MyNavbar /> */}
+      <div>Hello!</div>
     </div>
   )
 }
 
 export default App
+
+// export const name = 'Stefano'
+
+// import App from './App'
+// import { name } from './App'
